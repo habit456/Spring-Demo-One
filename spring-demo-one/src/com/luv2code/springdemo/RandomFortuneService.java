@@ -6,7 +6,9 @@ public class RandomFortuneService implements FortuneService {
 	private String[] fortunes = {
 			"Be persistent.", 
 			"Love yourself first.",
-			"Exercise will keep you coding."};
+			"Exercise will keep you coding.",
+			"Learn coding like a sport - practice, practice, practice"};
+	
 	private Random rand = new Random();
 	
 	public RandomFortuneService() {

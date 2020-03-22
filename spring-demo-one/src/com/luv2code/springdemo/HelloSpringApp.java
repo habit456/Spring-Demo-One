@@ -12,6 +12,12 @@ public class HelloSpringApp {
 		
 		// retrieve bean from spring container
 		Coach theCoach = context.getBean("myCoach", Coach.class);
+		Coach betaCoach = context.getBean("myCoach", Coach.class);
+		
+		boolean result = (theCoach == betaCoach);
+		System.out.println(result);
+		System.out.println("theCoach memory location: " + theCoach);
+		System.out.println("betaCoach memory location: " + betaCoach);
 		
 		// call methods on the bean
 		System.out.println(theCoach.getDailyWorkout());
